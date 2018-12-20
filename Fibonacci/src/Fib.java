@@ -4,25 +4,24 @@ import java.util.Date;
 public class Fib {
 
 	public static void main(String[] args) throws InterruptedException {
-		SimpleDateFormat sdf = new SimpleDateFormat("YYYY/MM/dd HH:mm:ss.SSS");
+		 SimpleDateFormat sdf = new SimpleDateFormat("YYYY/MM/dd HH:mm:ss.SSS");
 
-		 Date start = new Date();
-		 System.out.println(sdf.format(start));
-		 System.out.println(Fib1(48));
+		 System.out.println(sdf.format(new Date()));
+		 System.out.println(Fib1(40));
 		 System.out.println(sdf.format(new Date()));
 		
 		 Thread.sleep(2000);
 		 System.out.println();
 
 		System.out.println(sdf.format(new Date()));
-		System.out.println(Fib2(48));
+		System.out.println(Fib2(1000000));
 		System.out.println(sdf.format(new Date()));
 
 		Thread.sleep(2000);
 		System.out.println();
 
 		System.out.println(sdf.format(new Date()));
-		System.out.println(Fib3(48));
+		System.out.println(Fib3(1000000));
 		System.out.println(sdf.format(new Date()));
 	}
 
@@ -53,7 +52,7 @@ public class Fib {
 		if (n == 1 || n == 2)
 			return 1;
 		else {
-			int[][] a = new int[2][2];
+			int[][] a = new int[2][2];//用二维数组模拟2*2矩阵
 			a[0][0] = 1;
 			a[0][1] = 1;
 			a[1][0] = 1;
@@ -64,7 +63,8 @@ public class Fib {
 			return temp[0][0] + temp[0][1];
 		}
 	}
-
+	
+	//矩阵相乘计算 目前只支持2*2矩阵相乘
 	public static int[][] matricMulity(int[][] a, int[][] b) {
 		int[][] result = new int[2][2];
 		result[0][0] = a[0][0] * b[0][0] + a[0][1] * b[1][0];
@@ -74,6 +74,7 @@ public class Fib {
 		return result;
 	}
 
+	//2*2矩阵幂运算
 	public static int[][] matricPow(int[][] a, int n) {
 		if (n == 0)
 			return new int[][] { { 1, 1 }, { 1, 0 } };
