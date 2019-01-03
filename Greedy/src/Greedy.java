@@ -1,11 +1,9 @@
 import Model.Goods;
 import Model.Meeting;
 
-import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
-import java.util.Date;
 
 //贪心算法主程序入口类
 public class Greedy {
@@ -38,7 +36,6 @@ public class Greedy {
             System.out.println("Size:" + result.get(i).getSize() + " Value:" + result.get(i).getValue());
         }
 
-
         //会议安排
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH");
 
@@ -56,7 +53,7 @@ public class Greedy {
 
         List<Meeting> resultmeeting = Schedule.Calculation(meetingList);
         for (int i = 0; i < resultmeeting.size(); i++) {
-            System.out.println("会议" + i + " starttime:" + df.format(resultmeeting.get(i).getStartTime()) + " endtime:" + df.format(resultmeeting.get(i).getEndTime()));
+            System.out.println("Meeting" + i + " starttime:" + df.format(resultmeeting.get(i).getStartTime()) + " endtime:" + df.format(resultmeeting.get(i).getEndTime()));
         }
         System.out.println("Can arrang " + resultmeeting.size() + " meeting");
     }

@@ -37,9 +37,7 @@ public class Goods implements Comparable<Goods> {
         Name = name;
     }
 
-    public double getSize() {
-        return Size;
-    }
+    public double getSize() { return Size; }
 
     public void setSize(double size) {
         Size = size;
@@ -53,13 +51,9 @@ public class Goods implements Comparable<Goods> {
         Value = value;
     }
 
-    public double getPerValue() {
-        return PerValue;
-    }
+    public double getPerValue() { return PerValue; }
 
-    public void setPerValue(double perValue) {
-        PerValue = perValue;
-    }
+    public void setPerValue(double perValue) { PerValue = perValue; }
 
     @Override
     public int compareTo(Goods g) {

@@ -2,7 +2,9 @@
 <project version="4">
   <component name="Encoding" addBOMForNewFiles="with NO BOM">
     <file url="file://$PROJECT_DIR$/../Fibonacci/src/Fib.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/BackBag.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/Model/Goods.java" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/src/BackBag.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Greedy.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Model/Goods.java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
